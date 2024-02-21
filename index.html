@@ -1,11 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ticket</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MJ Paribahan</title>
+  <!-- daisy ui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+
+
 </head>
-<body>
-    <h1>aaaaa</h1>
+
+<body class="raleway max-w-[1250px] mx-auto">
+  <header>
+    <!-- nav -->
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-3xl font-extrabold">MJ-Ticket</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Destination</a></li>
+          <li><a>search</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn bg-green-200 text-[#1DD100]">Bus <span> <img src="images/bus-icon.png" alt=""></span></a>
+      </div>
+    </div>
+    <!-- nav end -->
+    <!-- banner start -->
+    <section>
+      <div class="hero min-h-[550px]" style="background-image: url(images/banner.png);">
+        <div class="hero-overlay bg-opacity-60 rounded-2xl"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="">
+            <h1 class="mb-5 text-5xl font-bold ">End-to-End Travel with <br> <span class="text-[#1DD100] ">MJ
+                Paribahan</span></h1>
+            <p class="mb-5">Bus travel is a chance to sit back, relux and watch the world go by. It's a chance to
+              disconnect from <br>the distraction of everyday life.</p>
+            <button class="btn bg-[#1DD100] font-bold text-xl border-none">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner end -->
+  </header>
+
+  <main>
+    <!-- offer start -->
+    <section class="mt-10">
+      <div class="text-center">
+        <h1 class="text-4xl font-bold">Best Offer for You</h1>
+      </div>
+
+      <div class="lg:flex lg:justify-between">
+      <div class="flex justify-center items-center gap-10 mt-12">
+        <div class="flex gap-16 bg-yellow-500 w-[550px] items-center justify-center rounded-2xl">
+          <div>
+            <h1 class="text-3xl font-bold">15% OFF</h1>
+            <p class="text-xl text-slate-800 font-bold">on your next purchase</p>
+            <p class="text-xl font-bold text-slate-600">use by January 24</p>
+          </div>
+
+          <div>
+            <img class="h-[150px]" src="images/cupon-devider.png" alt="">
+          </div>
+
+          <div>
+            <h1 class="text-3xl font-bold">NEw15</h1>
+            <p class="text-xl text-slate-800 font-bold">Coupon Code</p>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="flex justify-center items-center gap-10 mt-12">
+        <div class="flex gap-16 bg-yellow-500 w-[550px] items-center justify-center rounded-2xl">
+          <div>
+            <h1 class="text-3xl font-bold">20% OFF</h1>
+            <p class="text-xl text-slate-800 font-bold">on your next purchase</p>
+            <p class="text-xl font-bold text-slate-600">use by January 24</p>
+          </div>
+
+          <div>
+            <img class="h-[150px]" src="images/cupon-devider.png" alt="">
+          </div>
+
+          <div>
+            <h1 class="text-3xl font-bold">Couple 20</h1>
+            <p class="text-xl text-slate-800 font-bold">Coupon Code</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- coupon end -->
+    <div class="flex justify-center items-center mt-8">
+      <button class=" border-[2px] border-green-500 rounded-xl text-[#1DD100] w-[160px] bg-white h-[50px] ">See All Offer</button>
+    </div>
+
+    </section>
+  </main>
 </body>
+
 </html>
