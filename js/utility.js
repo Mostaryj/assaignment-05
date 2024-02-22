@@ -1,10 +1,14 @@
 const allBtn = document.getElementsByClassName('btnStyle');
-const maxSelectSeat = 4;
+// const maxSelectionSeat = 4;
+let maxSeatBooked =0;
 for (const btn of allBtn){
     btn.addEventListener('click', function(event){
         const bgStyle = event.target;
         const text = bgStyle.innerText;
         bgStyle.style.background = '#1DD100';
+
+        // 
+       
 
         const div = document.createElement('div');
         const p = document.createElement('p');
@@ -25,7 +29,7 @@ for (const btn of allBtn){
         seatDecrease('seat-decrease');
         seatCount ('seat-count');
         totalAmount(getValueById('ticket-fare'));
-        granfTotalAmount();
+        grandTotalAmount();
         event.target.setAttribute('disabled', false);
 
 
@@ -56,11 +60,11 @@ couponBtn.addEventListener('click', function (event) {
     }
 })
 
-// success window
+
 const success = document.getElementById('success-btn')
 success.addEventListener('click', function (event) {
     event.preventDefault();
-    window.location.href = '../success.html';
+    window.location.href = '../test.html';
 })
 
 // grand total
@@ -83,6 +87,7 @@ function totalAmount(value) {
 
 // seat number count
 function seatCount() {
+    
     const seat = document.getElementById('seat-count').innerText;
     const seatValue = parseInt(seat);
     const newValue = document.getElementById('seat-count').innerText = seatValue + 1;
@@ -96,7 +101,7 @@ function seatDecrease() {
     return newValue;
 }
 
-// value converted string to number
+
 function getValueById(id) {
     const value = document.getElementById(id).innerText;
     return parseInt(value);
