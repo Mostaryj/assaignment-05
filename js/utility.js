@@ -48,7 +48,7 @@ couponBtn.addEventListener('click', function (event) {
             const discount1 = grandTotalAmount() - discountPrice;
             document.getElementById('grand-total').innerText = discount1;
 
-        } else if (coupon == 'Couple 20') {
+        } else if (coupon == 'Couple20') {
             const discountPrice2 = grandTotalAmount() * 20 / 100;
             const discount2 = grandTotalAmount() - discountPrice2;
             document.getElementById('grand-total').innerText = discount2;
