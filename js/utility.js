@@ -64,7 +64,7 @@ couponBtn.addEventListener('click', function (event) {
 const success = document.getElementById('success-btn')
 success.addEventListener('click', function (event) {
     event.preventDefault();
-    window.location.href = '../test.html';
+    window.location.href = 'test.html';
 })
 
 // grand total
